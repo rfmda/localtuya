@@ -64,44 +64,10 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 HVAC_MODE_SETS = {
-    "manual/auto": {
-        HVACMode.HEAT: "manual",
-        HVACMode.AUTO: "auto",
-    },
-    "Manual/Auto": {
-        HVACMode.HEAT: "Manual",
-        HVACMode.AUTO: "Auto",
-    },
-    "MANUAL/AUTO": {
-        HVACMode.HEAT: "MANUAL",
-        HVACMode.AUTO: "AUTO",
-    },
-    "Manual/Program": {
-        HVACMode.HEAT: "Manual",
-        HVACMode.AUTO: "Program",
-    },
-    "m/p": {
-        HVACMode.HEAT: "m",
-        HVACMode.AUTO: "p",
-    },
-    "True/False": {
-        HVACMode.HEAT: True,
-    },
-    "Auto/Cold/Dry/Wind/Hot": {
-        HVACMode.HEAT: "hot",
-        HVACMode.FAN_ONLY: "wind",
-        HVACMode.DRY: "wet",
-        HVACMode.COOL: "cold",
-        HVACMode.AUTO: "auto",
-    },
-    "Cold/Dehumidify/Hot": {
-        HVACMode.HEAT: "hot",
-        HVACMode.DRY: "dehumidify",
-        HVACMode.COOL: "cold",
-    },
-    "1/0": {
-        HVACMode.HEAT: "1",
-        HVACMode.AUTO: "0",
+    "Cool/Fan/Dry": {
+        HVACMode.FAN_ONLY: "FAN",
+        HVACMode.DRY: "DRY",
+        HVACMode.COOL: "COOL",
     },
 }
 HVAC_ACTION_SETS = {
@@ -127,12 +93,10 @@ HVAC_ACTION_SETS = {
     },
 }
 HVAC_FAN_MODE_SETS = {
-    "Auto/Low/Middle/High/Strong": {
-        FAN_AUTO: "auto",
-        FAN_LOW: "low",
-        FAN_MEDIUM: "middle",
-        FAN_HIGH: "high",
-        FAN_TOP: "strong",
+    "Low/Miedium/High": {
+        FAN_LOW: 1,
+        FAN_MEDIUM: 2,
+        FAN_HIGH: 3,
     }
 }
 HVAC_SWING_MODE_SETS = {
