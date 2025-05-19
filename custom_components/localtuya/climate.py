@@ -65,7 +65,7 @@ _LOGGER = logging.getLogger(__name__)
 
 HVAC_MODE_SETS = {
     "Cool/Fan/Dry": {
-        HVACMode.FAN_ONLY: "FAN",
+        HVACMode.AUTO: "FAN",
         HVACMode.DRY: "DRY",
         HVACMode.COOL: "COOL",
     },
